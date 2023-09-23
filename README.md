@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Alexander Muruchi</h1>
 <h3 align="center">Frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on [this project (my first one):](https://github.com/Aluchi/la-libertad-avanza.git)
+- 🔭 I’m currently working on **La Libertad Avanza**
 
 - 🌱 I’m currently learning **JavaScript & GIT**
 
