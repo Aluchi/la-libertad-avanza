@@ -353,14 +353,66 @@ footer h4{
 }
 
 .noticias-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+        "one two"
+        "three four"
+        "five six"
+    ;
+}
+
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+} 
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+
+.noticias-items div{
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    flex-wrap: wrap;
 }
-.yout {
-    padding: 20px;
+
+@media screen and (max-width: 1291px) {
+
+    .noticias-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+        ;
+    }
 }
+
+@media screen and (max-width: 640px) {
+    .noticias-items div iframe{
+        width: 290px;
+        height: 190px;
+    }
+}
+
 
 /*------ SOBRE NOSOTROS ------*/
 
