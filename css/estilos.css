@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+header {
+  background-color: #00001E;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  z-index: 20; }
+  header nav {
+    width: 100%;
+    height: 80px;
+    background-color: #00001E; }
+  header nav .container-fluid {
+    background-color: #00001E; }
+    header nav .container-fluid .navbar-brand img {
+      height: 60px; }
+  header nav .container-fluid .nav-item {
+    background-color: none;
+    transition: all 0.3s; }
+    header nav .container-fluid .nav-item:hover {
+      background-color: #36216E;
+      border-radius: 10px; }
+  header nav .container-fluid .dropdown .dropdown-menu .dropdown-item {
+    background-color: none;
+    transition: all 0.3s; }
+    header nav .container-fluid .dropdown .dropdown-menu .dropdown-item:hover {
+      background-color: #00001E; }
+
+/*------ RESET ------*/
+/*------ HEADER ------*/
+/*------ BODY ------*/
+/* TARJETAS */
+/*------ FINAL_HERO ------*/
+/*------ FOOTER ------*/
+/*------ PLAN-BODY ------*/
+/*------ REFORMAS ------*/
+/*------ NOTICIAS ------*/
+/*------ SOBRE NOSOTROS ------*/
+/*------ SER FISCAL ------*/
+/*--REGISTRO--*/
+.hero {
+  color: #ffffff;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../imgs/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -3; }
+  .hero div {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; }
+    .hero div p {
+      line-height: 25px; }
+    .hero div h1 {
+      line-height: 45px;
+      font-size: 50px;
+      font-weight: bold; }
+
+.h {
+  width: 60%;
+  height: 2px;
+  border: 0 none;
+  margin: 20px auto 40px auto;
+  background-color: #000000; }
+
+.candidatos {
+  width: 100%;
+  font-size: 15px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 30px; }
+  .candidatos h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 30px; }
+  .candidatos .candidatos-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; }
+    .candidatos .candidatos-container div h3 {
+      line-height: 40px;
+      margin-top: 15px; }
+  .candidatos div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px; }
+
+.candidatos-container div {
+  border-radius: 10px;
+  transition: all 0.3s ease-out; }
+  .candidatos-container div:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 5px 5px 22px 14px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 5px 5px 22px 14px rgba(0, 0, 0, 0.46);
+    box-shadow: 5px 5px 22px 14px rgba(0, 0, 0, 0.46); }
+
+.final-hero {
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif; }
+  .final-hero div img {
+    width: 200px;
+    height: 150px;
+    padding-top: 20px; }
+  .final-hero div h2 {
+    font-size: 20px;
+    padding: 20px 0px 40px 0px; }
+
+.definicion {
+  background-color: #36216E;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; }
+  .definicion h1 {
+    padding-top: 60px;
+    text-align: center; }
+  .definicion .def-content {
+    margin: 0px 90px 0px 90px;
+    padding-bottom: 60px; }
+    .definicion .def-content p {
+      line-height: 25px; }
+
+.reformas {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .reformas h2 {
+    padding-top: 60px;
+    text-align: center; }
+  .reformas .reformas-content {
+    margin: 0px 90px 0px 90px;
+    padding-bottom: 60px;
+    line-height: 40px;
+    font-size: 18px; }
+
+.noticias .titulo {
+  background-color: #36216E;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .noticias .titulo h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 31px;
+    font-weight: bold; }
+
+.videos .frames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-areas: "one two" "three four";
+  padding: 20px; }
+  .videos .frames div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+
+.one {
+  grid-area: one; }
+
+.two {
+  grid-area: two; }
+
+.three {
+  grid-area: three; }
+
+.four {
+  grid-area: four; }
+
+.card {
+  width: 30%;
+  transition: all 0.5s ease-out; }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.centrado-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.sobre-nosotros .titulo {
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/patria.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .sobre-nosotros .titulo h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 60px;
+    text-align: center; }
+
+.content {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .content h2 {
+    padding-top: 60px;
+    text-align: center; }
+  .content p {
+    margin: 0px 90px 0px 90px;
+    padding-bottom: 60px;
+    line-height: 40px;
+    font-size: 18px; }
+
+.ser-fiscal .titulo {
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/milei-dos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .ser-fiscal .titulo h1 {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 60px;
+    text-align: center; }
+
+.explicacion {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .explicacion h2 {
+    padding-top: 60px;
+    text-align: center; }
+  .explicacion .explicacion-content {
+    margin: 0px 90px 0px 90px;
+    padding-bottom: 60px;
+    line-height: 40px;
+    font-size: 18px; }
+
+.registro {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  background-image: url("../imgs/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 16px; }
+  .registro h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    padding-top: 20px; }
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px; }
+  .inputs form div {
+    padding: 15px; }
+
+footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding-bottom: 20px; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    footer div .redes {
+      width: 60px;
+      height: 50px;
+      padding: 5px 10px 5px 10px; }
+      footer div .redes:hover {
+        transform: scale(1.1); }
+  footer h4 {
+    padding-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif; }
+
+@media screen and (max-width: 920px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 640px) {
+  .expandir_menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffffff; }
+  .cerrar_menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: #ffffff; }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101010;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible; }
+  .nav-list {
+    flex-direction: column;
+    align-items: end; }
+    .nav-list li a {
+      color: #ffffff; } }
+
+@media screen and (max-width: 727px) {
+  .inputs-imagen img {
+    width: 200px;
+    height: 150px; } }
+
+@media screen and (max-width: 920px) {
+  .card {
+    font-size: 13px;
+    width: 100%; } }
+
+@media screen and (max-width: 1291px) {
+  .videos .frames {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    grid-template-areas: "one" "two"  "three"  "four"; } }
+
+@media screen and (max-width: 770px) {
+  .videos div iframe {
+    width: 290px;
+    height: 190px; } }
+
+@media screen and (max-width: 780px) {
+  .hero div p {
+    line-height: 25px;
+    font-size: 13px; }
+  .hero div h1 {
+    line-height: 45px;
+    font-size: 35px;
+    font-weight: bold; } }
