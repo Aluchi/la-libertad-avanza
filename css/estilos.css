@@ -8,6 +8,167 @@
 body {
   font-family: 'Montserrat', sans-serif; }
 
+header, .hero, .centrado-noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background-color: #00001E;
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  z-index: 20; }
+
+.hero {
+  color: #ffffff;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-image: url("../imgs/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -3; }
+
+.final-hero {
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: none;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif; }
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: none;
+  flex-wrap: none; }
+
+.definicion {
+  background-color: #36216E;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: none;
+  flex-direction: column; }
+
+.reformas {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.noticias .titulo {
+  background-color: #36216E;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.videos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: none;
+  flex-wrap: none; }
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: none;
+  flex-wrap: wrap;
+  padding: 20px; }
+
+.sobre-nosotros .titulo {
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/patria.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.content {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.ser-fiscal .titulo {
+  width: 100%;
+  height: 45vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imgs/milei-dos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.explicacion {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: none;
+  flex-direction: column;
+  flex-wrap: none; }
+
+.registro h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 30px;
+  padding-top: 20px; }
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px; }
+
 header {
   background-color: #00001E;
   position: sticky;
@@ -106,7 +267,8 @@ header {
 
 .candidatos-container div {
   border-radius: 10px;
-  transition: all 0.3s ease-out; }
+  transition: all 0.3s ease-out;
+  margin: 10px; }
   .candidatos-container div:hover {
     transform: scale(1.1);
     -webkit-box-shadow: 5px 5px 22px 14px rgba(0, 0, 0, 0.46);
@@ -314,6 +476,8 @@ header {
   flex-wrap: wrap;
   padding: 20px; }
   .inputs form div {
+    display: flex;
+    flex-direction: column;
     padding: 15px; }
 
 footer {
@@ -342,43 +506,30 @@ footer {
   header {
     flex-direction: column; } }
 
-@media screen and (max-width: 640px) {
-  .expandir_menu {
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-    color: #ffffff; }
-  .cerrar_menu {
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-    color: #ffffff; }
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #101010;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
-  .nav.visible {
-    opacity: 1;
-    visibility: visible; }
-  .nav-list {
-    flex-direction: column;
-    align-items: end; }
-    .nav-list li a {
-      color: #ffffff; } }
+@media screen and (max-width: 770px) {
+  main section.reformas div.reformas-content {
+    margin: 0px 30px 0px 30px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 770px) {
+  main section.content div p {
+    margin: 0px 30px 0px 30px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 770px) {
+  main.ser-fiscal div.explicacion div.explicacion-content {
+    margin: 0px 30px 0px 30px;
+    padding-bottom: 60px;
+    line-height: 30px;
+    font-size: 14px; } }
+
+@media screen and (max-width: 990px) {
+  header nav div.container-fluid form.d-flex {
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 727px) {
   .inputs-imagen img {
